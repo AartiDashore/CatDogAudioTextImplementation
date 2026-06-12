@@ -1,0 +1,6 @@
+How to execute the Files:
+-> Open terminal.
+-> Change your directory to cat_dog folder.
+-> Run python cat_classifier.py
+-> Run app1.py
+-> Click on the generated address link (http://127.0.0.1:5000) to view it in the browser.

@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;  /* Dark Mode */
+  color: #ffffff; /* Text to white */
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; /* Prevents resizing based on content */
+    align-items: center;
+}
+
+td {
+    padding: 10px; /* Adds space between columns */
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  color: #555;
+  font-size: 20px; /* Increase font size */
+  align-content: end;
+}
+
+
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+
+audio {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.prediction {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+svg {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+  height: 300px;
+}
+
+svg text {
+  font-size: 12px;
+  fill: #666;
+}
+
+img{
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  width: 1000;
+  height: 400;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat vs Dog Audio Analyzer</title>
+  <link rel="stylesheet" href="/static/styles1.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Cat vs Dog Audio Analyzer</h1>
+  <label for="audioSelect" style="align-items: center;">Choose an audio file:</label>
+  <select id="audioSelect" style="align-items: left;">
+    {% for file in audio_files %}
+      <option value="{{ file }}">{{ file }}</option>
+    {% endfor %}
+  </select>
+  <div>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+
+  <div class="prediction">
+    <h2 id="predictionText"></h2>
+  </div>
+  <!--<div class="model-accuracy">
+    <h2>Model Accuracy: <span id="accuracyText"></span>%</h2>
+  </div> -->
+  <div class="chart-container">
+    <table style="width: 100%;">
+      <tr><td style="width: 50%; vertical-align: top;">
+        <div>
+          <h3>Waveform</h3>
+          <svg id="waveformChart" width="800" height="250"></svg>
+        </div><br>
+        <div>
+          <h3>Oscillogram</h3>
+          <svg id="oscillogramChart" width="800" height="250"></svg>
+        </div><br>
+        </td><td style="width: 50%; vertical-align: top;">
+        <div>
+          <h3>Spectrogram (Heatmap)</h3>
+          <!--<canvas id="spectrogramCanvas" width="800" height="600"></canvas>-->
+          <img id="spectrogramImage" style="width: 750px; height: 700px; display: none;" />
+          <!--<svg id="spectrogramChart" width="800" height="400"></svg>-->
+        </div>
+        </td>
+      </tr>
+  </div>
+</div>
+
+<script src="static/js/dashboard.js"></script>
+</body>
+</html>

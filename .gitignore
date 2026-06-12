@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Reports and presentations
+Write-Up.pdf
+*.pptx
+
+# Model and data files
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
