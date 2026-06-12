@@ -81,6 +81,9 @@ Three complementary visualizations are provided for each audio sample:
 - Dog sounds show evenly spaced energy spikes, reflecting a repetitive barking pattern.
 - Cat sounds show irregular spike intervals and varying magnitudes, reflecting more diverse vocalizations.
 
+## Output
+![Output-websie](Output.png)](https://github.com/AartiDashore/CatDogAudioTextImplementation/blob/main/Output.png)
+
 ## Tech Stack
 
 - HTML
